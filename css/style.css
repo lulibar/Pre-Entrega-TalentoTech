@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    box-sizing: border-box;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 10px 5px;
+    background-color: rgb(234, 146, 146);
+    border-bottom: 2px solid #e0e0e0;
+    margin-top: 30px;
+
+    h1 {
+        margin: 0;
+        color: rgb(255, 250, 204);
+        font-size: 2.5em;
+    }
+
+    .topnav {
+
+        background-color: rgb(205, 92, 92);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 20px;
+        font-size: 0.9rem;
+        color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        
+
+    }
+
+    .top-nav-links {
+        display: flex;
+        gap: 15px;
+
+    }
+
+    .topnav p {
+        margin: 0;
+    }
+
+    .top-nav-links a {
+
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .top-nav-links a:hover {
+        color: black;
+    }
+}
+
+
+nav {
+
+    ul {
+
+        list-style: none;
+        display: flex;
+        gap: 15px;
+
+        li {
+            margin: 0 1em;
+
+            a {
+                text-decoration: none;
+                color: rgb(255, 250, 204);
+                font-weight: bold;
+                transition: color 0.3s;
+                font-size: 1.3em;
+            }
+
+            a:hover {
+                color: black;
+            }
+        }
+    }
+
+}
+
+.acciones_user {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    padding: 0.75em 0;
+
+    .icon {
+        width: 30px;
+        height: 30px;
+        transition: transform 0.3s;
+    }
+
+    .icon:hover {
+        transform: scale(1.5);
+    }
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+.contenedor_productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5em;
+}
+
+.producto {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1em;
+    text-align: center;
+    width: 35%;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+
+.contenedor_reseñas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+}
+
+.reseña_card {
+
+    background-color: #eee;
+    padding: 1em;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: rgb(234, 146, 146);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: rgb(205, 92, 92);
+}
+
+footer {
+
+    background-color: rgb(234, 146, 146);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+
+/* Responsividad */
+
+@media screen and (min-width: 600px) and (max-width: 600px) {
+
+    form {
+        max-width: 100%; 
+        padding: 0 1em;
+    }
+
+    form label {
+        font-size: 1.1em; 
+    }
+
+    form input, form textarea, form button {
+        font-size: 1.05em; 
+        padding: 12px; 
+    }
+    
+    
+}
+
+@media screen and(min-width: 758px) {
+
+    form{
+
+        max-width: 200px; 
+        padding: 0 1em;
+
+    }
+
+    form input, form textarea, form button{
+        font-size: 0.9em;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    form {
+        max-width: 100%; 
+        padding: 0 1em;
+    }
+
+    form label {
+        font-size: 0.9em; 
+    }
+
+    form input, form textarea, form button {
+        font-size: 0.85em; 
+        padding: 8px; 
+    }
+}
+
+
